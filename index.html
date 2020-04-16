@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>애완동물정보</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+      
+    <style>
+        * {margin: 0; padding: 0;}
+       body {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+       }
+
+       h1 {font-weight: 400;}
+       
+       a{
+           text-decoration: none;
+           color: #fff;
+       }
+
+       ul {list-style-type: none;}
+
+       header {
+           background-color: #6200ee;
+           color: white;
+           text-align: center;
+           box-shadow: 4px 0px 6px #666;
+           position: fixed;
+           left: 0; top: 0;
+           width: 100%;
+           z-index: 999;
+       }
+       header > h1 {
+           font-size: 22px;
+           padding-top: 15px;
+           padding-bottom: 5px;
+       }
+
+       header > nav {
+           /* outline: 1px solid red; */
+           overflow: hidden;
+       }
+
+       header > nav ul > li {
+           float: left;
+           width: 33.33%;
+       }
+
+       header > nav ul > li > a {
+           display: block;
+           padding-top: 10px;
+           padding-bottom: 10px;
+           opacity: 0.8;
+           position: relative;
+           font-weight: normal;
+           /* text-decoration: uppercase; (소문자를 대문자로) */
+       }
+
+       header > nav ul > li > a:hover,
+       header > nav ul > li > a:active,
+       header > nav ul > li > a.selected {
+           opacity: 1;
+       }
+
+       /* 메뉴 전환시 하단 보더 효과 */
+       header > nav ul > li > a.selected:after {
+           content: "";
+           position: absolute;
+           width: 100%;
+           height: 2px;
+           background-color: #fff;
+           left: 0; bottom: 0;
+       }
+
+       /* 콘텐츠 - 동물리스트 */
+       section {
+           margin-top: 86px;
+           text-align: center;
+           padding: 15px;
+           padding-top: 0px;
+           overflow: hidden;
+       }
+       
+       section > h1 {
+           padding-top: 10px;
+           padding-bottom: 10px;
+       }
+
+       #pet_list {
+        /* outline: 2px solid red; */
+        overflow: hidden;
+       }
+
+       #pet_list > li {
+           position: relative;
+           width: 49%;
+           overflow: hidden;
+           float: left;
+           margin-right: 2%;
+           margin-bottom: 2%;
+       }
+
+
+
+
+       #pet_list > li:nth-child(2n) {
+           margin-right: 0;
+       }
+
+       
+       #pet_list > li > img { 
+           width: 100%;
+           display: block
+        }
+
+       #pet_list > li > .name {
+           position: absolute;
+           width: 100%;
+           height: 60px;
+           background-color: rgba(0, 0, 0, 0.7);
+           left: 0; bottom: 0;
+           color: #fff;
+           line-height: 60px;
+           font-size: 16px;
+           /* 첫글자 대문자로 ↓ */
+           text-transform: capitalize;
+       }
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+    <header>
+        <h1>Pets</h1>
+        <nav>
+            <ul>
+                <li><a class="selected" href="./index.html">DOGS</a></li>
+                <li><a href="./cats.html">CATS</a></li>
+                <li><a href="./birds.html">BIRDS</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>DOGS</h1>
+        <ul id="pet_list">
+            <li>
+              <img src="./images/dog01.jpg" alt="">  
+              <p class="name">boo</p>
+            </li>
+            <li>
+                <img src="./images/dog02.jpg" alt="">  
+                <p class="name">dori</p>
+              </li>
+              <li>
+                <img src="images/dog03.jpg" alt="">  
+                <p class="name">kity</p>
+              </li>
+              <li>
+                <img src="./images/dog04.jpg" alt="">  
+                <p class="name">barry</p>
+              </li>
+              <li>
+                <img src="./images/dog05.jpg" alt="">  
+                <p class="name">marry</p>
+              </li>
+              <li>
+                <img src="./images/dog06.jpg" alt="">  
+                <p class="name">bom</p>
+              </li>
+        </ul>
+        
+    </section>
+</div><!--end wrap-->
+</body>
+</html>
