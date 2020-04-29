@@ -1,177 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>애완동물정보</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
-      
-    <style>
-        * {margin: 0; padding: 0;}
-       body {
-        font-family: 'Roboto', sans-serif;
-        font-weight: 300;
-       }
-
-       h1 {font-weight: 400;}
-       
-       a{
-           text-decoration: none;
-           color: #fff;
-       }
-
-       ul {list-style-type: none;}
-
-       header {
-           background-color: #6200ee;
-           color: white;
-           text-align: center;
-           box-shadow: 4px 0px 6px #666;
-           position: fixed;
-           left: 0; top: 0;
-           width: 100%;
-           z-index: 999;
-       }
-       header > h1 {
-           font-size: 22px;
-           padding-top: 15px;
-           padding-bottom: 5px;
-       }
-
-       header > nav {
-           /* outline: 1px solid red; */
-           overflow: hidden;
-       }
-
-       header > nav ul > li {
-           float: left;
-           width: 33.33%;
-       }
-
-       header > nav ul > li > a {
-           display: block;
-           padding-top: 10px;
-           padding-bottom: 10px;
-           opacity: 0.8;
-           position: relative;
-           font-weight: normal;
-           /* text-decoration: uppercase; (소문자를 대문자로) */
-       }
-
-       header > nav ul > li > a:hover,
-       header > nav ul > li > a:active,
-       header > nav ul > li > a.selected {
-           opacity: 1;
-       }
-
-       /* 메뉴 전환시 하단 보더 효과 */
-       header > nav ul > li > a.selected:after {
-           content: "";
-           position: absolute;
-           width: 100%;
-           height: 2px;
-           background-color: #fff;
-           left: 0; bottom: 0;
-       }
-
-       /* 콘텐츠 - 동물리스트 */
-       section {
-           margin-top: 86px;
-           text-align: center;
-           padding: 15px;
-           padding-top: 0px;
-           overflow: hidden;
-       }
-       
-       section > h1 {
-           padding-top: 10px;
-           padding-bottom: 10px;
-       }
-
-       #pet_list {
-        /* outline: 2px solid red; */
-        overflow: hidden;
-       }
-
-       #pet_list > li {
-           position: relative;
-           width: 49%;
-           overflow: hidden;
-           float: left;
-           margin-right: 2%;
-           margin-bottom: 2%;
-       }
-
-
-
-
-       #pet_list > li:nth-child(2n) {
-           margin-right: 0;
-       }
-
-       
-       #pet_list > li > img { 
-           width: 100%;
-           display: block
-        }
-
-       #pet_list > li > .name {
-           position: absolute;
-           width: 100%;
-           height: 60px;
-           background-color: rgba(0, 0, 0, 0.7);
-           left: 0; bottom: 0;
-           color: #fff;
-           line-height: 60px;
-           font-size: 16px;
-           /* 첫글자 대문자로 ↓ */
-           text-transform: capitalize;
-       }
-
-    </style>
+    <title>웹퍼블리셔 박손영의 홈페이지</title>
+    <!-- web font -->
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+    <!-- my style -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <div id="wrap">
-    <header>
-        <h1>Pets</h1>
-        <nav>
+    <header id="main_header">
+        <div class="logo">
+            <h1><a href="./">PARK SON YOUNG.</a></h1>
+        </div>
+        <nav id="main_gnb">
             <ul>
-                <li><a class="selected" href="./index.html">DOGS</a></li>
-                <li><a href="./cats.html">CATS</a></li>
-                <li><a href="./birds.html">BIRDS</a></li>
+                <li><a href="./">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#works">works</a></li>
+                <li><a href="#">blog</a></li>
+                <li><a href="#contact">contact</a></li>
             </ul>
         </nav>
     </header>
-    <section>
-        <h1>DOGS</h1>
-        <ul id="pet_list">
+
+    <section id="main_visual">
+        <div class="left">
+            <header class="title">
+                <h2>
+                    <span>web publisher</span>
+                    <span>park son young</span>
+                </h2>
+            </header>
+        </div>
+
+        <div class="right">
+            <!-- 여기는 이미지  -->
+        </div>
+    </section>
+
+    <!-- about -->
+    <section id="about">
+        <div class="about_left">
+            <div class="box"></div>
+            <img src="./images/img1.jpg" alt="profile image">
+        </div>
+
+        <div class="about_right">
+            <header class="section_header">
+                <span>who am i</span>
+                <h2>ABOUT</h2>
+            </header>
+            <article>
+                <p>이것을 주는 없는 그들에게 부패를 황금시대를 일월과 사막이다. 피어나는
+                    있는 방지하는 보이는 살았으며, 것이다. 피부가 영원히 듣기만 꾸며 부패를
+                    앞이 천하를 사막이다. 고행을 보이는 얼음 것이다. 꽃이 찬미를 들어 있는가?
+                </p>
+                <p>
+                    이것을 주는 없는 그들에게 부패를 황금시대를 일월과 사막이다. 피어나는
+                    있는 방지하는 보이는 살았으며, 것이다. 피부가 영원히 듣기만 꾸며 부패를
+                    앞이 천하를 사막이다. 고행을 보이는 얼음 것이다. 꽃이 찬미를 들어 있는가?
+                </p>
+            </article>
+        </div>
+    </section>
+    <!-- WORKS -->
+    <section id="works">
+        <header class="section_header">
+            <span>porjects</span>
+            <h2>MY WORKS</h2>
+        </header>
+        <nav>
+            <a href="#">all</a>
+            <a href="#">web design</a>
+            <a href="#">graphic</a>
+            <a href="#">uiux</a>
+        </nav>
+        <!-- 작품목록 -->
+        <ul id="work_list">
             <li>
-              <img src="./images/dog01.jpg" alt="">  
-              <p class="name">boo</p>
+                <a href="#">
+                <img src="http://placeimg.com/387/387/tech/a" alt="작품이미지">
+                <div class="info">
+                    <h4>작품 제목</h4>
+                    <p>여기에 작품 설명...</p>
+                </div>
+            </a>
             </li>
             <li>
-                <img src="./images/dog02.jpg" alt="">  
-                <p class="name">dori</p>
-              </li>
-              <li>
-                <img src="images/dog03.jpg" alt="">  
-                <p class="name">kity</p>
-              </li>
-              <li>
-                <img src="./images/dog04.jpg" alt="">  
-                <p class="name">barry</p>
-              </li>
-              <li>
-                <img src="./images/dog05.jpg" alt="">  
-                <p class="name">marry</p>
-              </li>
-              <li>
-                <img src="./images/dog06.jpg" alt="">  
-                <p class="name">bom</p>
-              </li>
+                <a href="#">
+                <img src="http://placeimg.com/387/387/tech/b" alt="작품이미지">
+                <div class="info">
+                    <h4>작품 제목</h4>
+                    <p>여기에 작품 설명...</p>
+                </div>
+            </a>
+            </li>
+            <li>
+                <a href="#">
+                <img src="http://placeimg.com/387/387/tech/c" alt="작품이미지">
+                <div class="info">
+                    <h4>작품 제목</h4>
+                    <p>여기에 작품 설명...</p>
+                </div>
+            </a>
+            </li>
+            <li>
+                <a href="#">
+                <img src="http://placeimg.com/387/387/tech/d" alt="작품이미지">
+                <div class="info">
+                    <h4>작품 제목</h4>
+                    <p>여기에 작품 설명...</p>
+                </div>
+            </a>
+            </li>
+            <li>
+                <a href="#">
+                <img src="http://placeimg.com/387/387/tech/e" alt="작품이미지">
+                <div class="info">
+                    <h4>작품 제목</h4>
+                    <p>여기에 작품 설명...</p>
+                </div>
+            </a>
+            </li>
+            <li>
+                <a href="#">
+                <img src="http://placeimg.com/387/387/tech/f" alt="작품이미지">
+                <div class="info">
+                    <h4>작품 제목</h4>
+                    <p>여기에 작품 설명...</p>
+                </div>
+            </a>
+            </li>
+            <li>
+                <a href="#">
+                <img src="http://placeimg.com/387/387/tech/g" alt="작품이미지">
+                <div class="info">
+                    <h4>작품 제목</h4>
+                    <p>여기에 작품 설명...</p>
+                </div>
+            </a>
+            </li>
+            <li>
+                <a href="#">
+                <img src="http://placeimg.com/387/387/tech/h" alt="작품이미지">
+                <div class="info">
+                    <h4>작품 제목</h4>
+                    <p>여기에 작품 설명...</p>
+                </div>
+            </a>
+            </li>
+            <li>
+                <a href="#">
+                <img src="http://placeimg.com/387/387/tech/i" alt="작품이미지">
+                <div class="info">
+                    <h4>작품 제목</h4>
+                    <p>여기에 작품 설명...</p>
+                </div>
+            </a>
+            </li>
         </ul>
-        
     </section>
-</div><!--end wrap-->
+
 </body>
+
 </html>
